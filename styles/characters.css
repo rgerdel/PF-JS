@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+  margin-top: -10px;
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+
+}
+
+.carousel {
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 4px solid #60a85f;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.character-info {
+  margin-top: 8px;
+  font-size: 14px;
+  background: #60a85f;
+	background: -webkit-linear-gradient(to right, #88e23b, #60a85f);
+	background: linear-gradient(to right, #88e23b, #60a85f);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.buttons {
+  margin-top: 5px;
+    
+  
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+	border-radius: 20px;
+	border: 1px solid #043c6e;
+	background-color: #043c6e;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+
+
+.favorite-btn {
+  background: none;
+  border:none;
+  font-size: 45px;
+  /*cursor: pointer;*/
+  color: white;
+  float: right;
+}
+
+.favorite-btn.favoritoRickMorty {
+color: gold;
+}
+
+.ghost {
+  color: #FFFFFF;
+  font-size: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

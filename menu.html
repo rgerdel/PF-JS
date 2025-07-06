@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+
+<div class="fullPageMenu" id="nav">
+    <div class="banner">
+        <img src="./img/1b05957d6427ee6b523b68917c18e6ef.jpg">
+    </div>
+    <div id="usuarioLogueado" class="ghost"> 
+        <script>
+            const parametro = new
+            URLSearchParams(window.location.search);
+            const email = parametro.get("email")
+            document.getElementById("usuarioLogueado").textContent = email
+            
+        </script>
+    </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" data-text="Personajes" onclick="personajes()">Personajes</a></li>
+                <li><a href="#" data-text="favoritos" onclick="favoritos()">Favoritos&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#" data-text="Usuario" onclick="perfil()">Perfil&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <!-- <li><a href="./characters.html" data-text="Rick&Morty">Personajes</a></li> -->
+                <!-- <li><a href="./favorites.html" data-text="Rick&Morty">Favoritos&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+                <!-- <li><a href="#" data-text="Usuario">Perfil&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+                <li><a href="#" data-text="LogOut" onclick="salir_logout()">Salir&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                
+            </ul>
+        </div>  
+    </div>
+    
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    
+ 
+<script src="./auth.js"></script>   
+<script src="./menu.js"></script>
+
+</body>
+</html>

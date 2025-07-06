@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="./styles/characters.css">
+</head>
+<body>
+
+  <h2>Personajes Rick and Morty</h2>
+  
+      <div id="usuarioLogueado" class="ghost"> 
+        <script>
+            const parametro = new
+            URLSearchParams(window.location.search);
+            const email = parametro.get("email")
+            document.getElementById("usuarioLogueado").textContent = email
+            
+        </script>
+    </div>
+
+  <div class="buttons">
+    <button id="prev">Anterior</button>
+    <button id="next">Siguiente</button>
+  </div>
+  <div class="carousel">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Contenido -->
+    </div>
+  </div>
+
+<div class="button">
+    <button id="menu" onclick="menu()">Regresar al Inicio</button>
+</div>
+
+  <script src="./characters.js"></script>
+  <script src="./auth.js"></script> 
+  
+</body>
+</html>

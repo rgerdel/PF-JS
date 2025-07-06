@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/characters.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <div>
+        <h2>Perfil de Usuario Rick and Morty</h2>
+    </div>
+
+     <div id="usuarioLogueado" class=""> 
+        <script>
+            const parametro = new
+            URLSearchParams(window.location.search);
+            const email = parametro.get("email")
+            document.getElementById("usuarioLogueado").textContent = email
+        </script>
+        
+    </div>
+
+    <div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form id="formulario_registro">
+			<h2 style="text-align: center;">Datos del Usuario</h2>
+            <img src="./img/rick.jpg" width="50px">
+            <img src="./img/logo.png" width="100px">
+			<input id="usuario" name="usuario" type="text" placeholder="Usuario" required>
+			<input id="email" name="email" type="email" placeholder="Correo electronico" required />
+			<input id="password" name="password" type="password" placeholder="Contraseña" required />
+           
+			<div id="resultado"></div>
+
+            <button type="submit" onclick="actualizarPerfil()">Actualizar y Guardar Datos del usuario</button>
+            <button type="button" onclick="menu()">Regresar al Inicio</button>
+		</form>
+		
+	</div>
+    <script src="./auth.js"></script>  
+    <script src="./profile.js"></script>
+
+
+    
+</body>
+</html>

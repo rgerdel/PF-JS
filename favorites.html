@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles/favorites.css">
+  
+  <title>Rick and Morty</title>
+</head>
+<body>
+  <h2>Mis Personajes Favoritos Rick and Morty</h2>
+
+      <div id="usuarioLogueado" class="ghost"> 
+        <script>
+            const parametro = new
+            URLSearchParams(window.location.search);
+            const email = parametro.get("email")
+            document.getElementById("usuarioLogueado").textContent = email
+            
+        </script>
+    </div>
+
+  <div class="button">
+    <button id="menu" onclick="menu()">Regresar al Inicio</button>
+</div>
+  <div>
+  <div class="characters" id="favoritos-container"></div>
+</div>
+
+<div class="button">
+    <button id="menu" onclick="menu()">Regresar al Inicio</button>
+    
+</div>
+
+  
+  <script src="./favorites.js"></script>
+
+  
+</body>
+</html>

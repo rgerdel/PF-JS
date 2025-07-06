@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <h1></h1>
+    
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#" id="formulario_registro">
+			<h1>Crear cuenta</h1>
+            <img src="./img/rick.jpg" width="50px">
+            <img src="./img/logo.png" width="100px">
+			<input id="usuario" name="usuario" type="text" placeholder="Usuario" required>
+			<input id="email" name="email" type="email" placeholder="Correo electronico" required />
+			<input id="password" name="password" type="password" placeholder="Contraseña" required />
+           
+			<div id="resultado"></div>
+			<button type="submit">Registrarse</button>
+		</form>
+		
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#" id="formulario_inicio">
+			<h1>Iniciar sesion</h1>
+            <img src="./img/morty.jpg" width="50px">
+            <img src="./img/logo.png" width="100px">
+			<span></span>
+			<input id="emailIS" name="emailIS" type="email" placeholder="Email" />
+			<input id="passwordIS" name="passwordIS" type="password" placeholder="Password" />
+			<a href="#">Olvido su contraseña?</a>
+			<button type="submit">Iniciar sesion</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bienvenido!</h1>
+				<p>Para mantenerse conectado con nosotros, inicie sesión con su información personal.</p>
+				<button class="ghost" id="signIn">Iniciar sesion</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Importante!</h1>
+				<p>Si no tienes una cuenta con nosotros por favor Introduce tus datos personales</p>
+				<button class="ghost" id="signUp">Registrarse</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="./auth.js"></script>
+<script src="./slider.js"></script>
+</body>
+</html>
